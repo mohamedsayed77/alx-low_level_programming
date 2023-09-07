@@ -1,15 +1,15 @@
 #include <stdio.h>
 /**
-* main - Entry poit
-* Description: A C program that use sizeof operation of various types.
-* Return: Always 0 (success)
+ * main - Entry point
+ * Description: using sizeof operation of various types.
+ * Return: Always 0 (success)
 */
 int main(void)
 {
-	printf("size of a char: %ld byte(s)\n", sizeof(char));
-	printf("size of an int: %ld byte(s)\n", sizeof(int));
-	printf("size of a long int: %ld byte(s)\n", sizeof(long int));
-	printf("size of a long long int: %ld byte(s)\n", sizeof(long long int));
-	printf("size of a float: %ld byte(s)\n", sizeof(float));
+	printf(size of a char : % d byte(s)\n", sizeof(char));
+	printf(size of an int : % d byte(s)\n", sizeof(int));
+	printf(size of a long int : % d byte(s)\n", sizeof(long int));
+	printf(size of a long long int: % d byte(s)\n", sizeof(long long int));
+	printf(size of a float : % d byte(s)\n", sizeof(float));
 	return (0);
 }
