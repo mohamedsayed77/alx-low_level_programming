@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Entry pint
  * Description:a program that print alphabet with putchar
@@ -14,7 +15,7 @@ int main(void)
 		putchar(ch);
 		ch++;
 	}
-	outchar('\n');
+	putchar('\n');
 
 	return (0);
 }
