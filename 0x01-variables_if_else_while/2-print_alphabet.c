@@ -1,6 +1,7 @@
 #include <stdio.h>
+/**
  * main - Entry pint
- * Description: a
+ * Description:a program that print alphabet with putchar
  * Return: 0 (success)
 */
 
