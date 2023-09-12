@@ -1,4 +1,5 @@
-include "main.h"
+#include "main.h"
+
 /**
  * main - Entry point
  * Description: a function that print a character of _putchar all together
