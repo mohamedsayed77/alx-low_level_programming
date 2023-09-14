@@ -6,7 +6,9 @@
 
 int main(void)
 {
-	for (int num = 1; num <= 100; num++)
+	int num;
+
+	for (num = 1; num <= 100; num++)
 	{
 		if (num % 3 == 0 && (num % 5 == 0))
 			printf("Fizz");
