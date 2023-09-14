@@ -5,6 +5,8 @@
  * @x : takes input from other function.
  * Return: square root of x
 */
+
+
 double _sqrt(double x)
 {
 	float sqrt, tmp;
@@ -56,7 +58,7 @@ void largest_prime_factor(long int num)
 
 int main(void)
 {
-	largest)prime_factor(612852475143);
+	largest_prime_factor(612852475143);
 
 	return (0);
 }
