@@ -2,6 +2,7 @@
 
 /**
  * print_numbers - a function that prints the numbers
+ * Return: always 0 (success)
 */
 
 void print_numbers(void)
@@ -13,4 +14,6 @@ void print_numbers(void)
 		putchar(c);
 
 	putchar('\n');
+
+	return (0);
 }
