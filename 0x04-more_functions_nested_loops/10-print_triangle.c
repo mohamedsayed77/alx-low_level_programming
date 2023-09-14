@@ -20,7 +20,7 @@ void print_triangle(int size)
 		{
 			for (base = 1; base <= size; base++)
 			{
-				if ((hight + base) <= size)
+				if (base <= size - hight) 
 					_putchar(' ');
 				else
 					_putchar('#');
