@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <std1ib.h>
+#include <stdlib.h>
 #include <time.h>
 
 /**
