@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <std1ib.h>
+#include <time.h>
+
+/**
+ * main - generates random password for 101-crack
+ * Return: (0) success
+ *
+*/
+
+int main(void)
+{
+
+	int sum;
+	char c;
+
+	srand(time(NULL));
+	while (sum <= 2645)
+	{
+
+		c = rand() % 128;
+		sum += c;
+		putchar(c);
+	}
+	putchar(2772 - sum);
+	return (0);
+}
