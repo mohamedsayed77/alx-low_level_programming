@@ -10,7 +10,7 @@
  * Return: dest str copied to dest depending on the n
 */
 
-char *_strncpy(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n)
 {
 	strncpy(dest, src, n);
 	dest[n] = '\0';
