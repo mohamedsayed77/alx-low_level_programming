@@ -7,12 +7,24 @@
  * @src : pointer to source input
  * @n : the maximum num of character will be copied
  *
- * Return: dest str copied to dest depending on the n
+ * Return:  str copied to dest depending on the n
 */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	strncpy(dest, src, n);
-	dest[n] = '\0';
+	int i;
+
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+
+	while (i < n)
+	{
+
+		dest[i] = '\0';
+		i++;
+
+	}
 	return (dest);
+
+
 }
