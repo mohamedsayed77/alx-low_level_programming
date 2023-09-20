@@ -18,6 +18,6 @@ char *_strncat(char *dest, char *src, int n)
 	while (*dest_end != '\0')
 		dest_end++;
 
-	strncar(dest, src, n)
+	strncat(dest, src, n);
 	return (dest);
 }
