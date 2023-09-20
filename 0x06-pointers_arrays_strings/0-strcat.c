@@ -6,7 +6,7 @@
  * @dest : pointer to destnation input
  * @src : pointer to source input
  *
- * Return: dest concatenated to src
+ * Return: src concatnate to dest
 */
 
 char *_strcat(char *dest, char *src)
@@ -19,7 +19,7 @@ char *_strcat(char *dest, char *src)
 	while (dest[c])
 		c++;
 
-	for (c2 = 0; src[c2]; c2++;
+	for (c2 = 0; src[c2]; c2++)
 		dest[c++] = src[c2];
 	return (dest);
 
