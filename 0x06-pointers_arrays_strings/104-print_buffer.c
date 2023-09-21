@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * printableASCII - determines if a n is a printable ascii char
+ * isprintableASCII - determines if a n is a printable ASCII char
  * @n: take integer
- * Return: it returns 1 if true, 0 if false
+ * Return:  1 if true, 0 if false
 */
 
-int printableASCII(int n)
+int isprintableASCII(int n)
 {
-	return ((n >= 32 && n <= 126) || n == '\t');
+	return (n >= 32 && n <= 126);
 }
 
 
@@ -23,15 +23,16 @@ void printHexes(char *b, int start, int end)
 {
 	int i = 0;
 
-	while (i < end)
+	while (i < 10)
 	{
-		printf("%02x", *(b + start + i));
-		if (i % 2 == 1)
+		if (i < end)
+			printf("%02x", *(b + start + i));
+		else
+			printf("  ");
+		if (i % 2)
 			printf(" ");
 		i++;
 	}
-	printf("  ");
-
 }
 
 /**
@@ -48,7 +49,7 @@ void printASCII(char *b, int start, int end)
 	while (i < end)
 	{
 		ch = *(b + i + start);
-		if (!printableASCII(ch))
+		if (!isprintableASCII(ch))
 			ch = 46;
 		printf("%c", ch);
 		i++;
