@@ -8,7 +8,7 @@
 
 int printableASCII(int n)
 {
-	return (n >= 32 && n <= 126);
+	return ((n >= 32 && n <= 126) || n == '\t');
 }
 
 
@@ -21,26 +21,24 @@ int printableASCII(int n)
 
 void printHexes(char *b, int start, int end)
 {
-
 	int i = 0;
 
-	while (i < 10)
+	while (i < end)
 	{
-		if (i < end)
-			printf("%02x", *(b + start + i));
-		else
-			printf(" ");
-		if (i % 2)
+		printf("%02x", *(b + start + i));
+		if (i % 2 == 1)
 			printf(" ");
 		i++;
 	}
+	printf("  ");
+
 }
 
 /**
  * printASCII - print ascii values for string b
  * @b: take a string
  * @start: starting position
- 8 @end: ending position
+ * @end: ending position
 */
 
 void printASCII(char *b, int start, int end)
