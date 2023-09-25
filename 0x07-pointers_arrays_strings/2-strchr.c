@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strchr -  is used to used to locate the first occurrence
+ * *_strchr -  is used to locate the first occurrence
  *	of a specified character.
  * @s : pointer to string
  * @c : the character you want to locate
@@ -15,7 +15,10 @@ char *_strchr(char *s, char c)
 	{
 		if (*s == c)
 			return (s);
+
+		if (c == '\0')
+			return (s);
 		s++;
 	}
-	return (NULL);
+	return ('\0');
 }
