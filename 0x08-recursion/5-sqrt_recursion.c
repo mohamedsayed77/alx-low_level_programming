@@ -25,7 +25,7 @@ int square(int n, int val)
 {
 
 
-	if (val == n)
+	if (val * val == n)
 		return (val);
 
 	else if (val * val < n)
