@@ -6,10 +6,10 @@
  * main -  a program that prints sum of 2 numbers
  * @argc: argument counts
  * @argv: its  array of string
- * Return: return 0 (success)
+ * Return: return 0 (success), 1 if fail
 */
 
-int main(int argc, char const  *argv[])
+int main(int argc, char *argv[])
 {
 
 	int sum;
