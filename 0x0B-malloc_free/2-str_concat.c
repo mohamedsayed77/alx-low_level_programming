@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _strlen - find len of the string
- * @s: pointer to a string
+ * _strlen - a function that find length of a string
+ * @s: string 
  * return: int
 */
 
@@ -18,11 +18,10 @@ int _strlen(char *s)
 }
 
 /**
- * *str_concat - a function that concatnate 2 string and return them
- * to allocation space
- * @s1: pointer to string
- * @s2 : pointer to string
- * Return: return pointer concatnated string
+ * *str_concat - a function that concatnate 2 string
+ * @s1:  string 1
+ * @s2 : string 2
+ * Return: pointer
 */
 char *str_concat(char *s1, char *s2)
 {
