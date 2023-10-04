@@ -2,9 +2,9 @@
 
 /**
  * _strlen - a function that find length of a string
- * @s: string 
+ * @s: string
  * return: int
-*/
+ */
 
 int _strlen(char *s)
 {
@@ -22,7 +22,7 @@ int _strlen(char *s)
  * @s1:  string 1
  * @s2 : string 2
  * Return: pointer
-*/
+ */
 char *str_concat(char *s1, char *s2)
 {
 
