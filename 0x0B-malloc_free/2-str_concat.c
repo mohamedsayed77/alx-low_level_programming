@@ -2,7 +2,7 @@
 
 /**
  * _strlen - find len of the string
- * @s : pointer to string
+ * @s: pointer to a string
  * return: int
 */
 
@@ -22,7 +22,7 @@ int _strlen(char *s)
  * to allocation space
  * @s1: pointer to string
  * @s2 : pointer to string
- * Return: return concatnated string to allocation space
+ * Return: return pointer concatnated string
 */
 char *str_concat(char *s1, char *s2)
 {
