@@ -1,10 +1,13 @@
 #include "main.h"
 
+
 /**
  * _strlen - a function that find length of a string
  * @s: string
  * return: int
  */
+
+
 
 int _strlen(char *s)
 {
@@ -17,12 +20,15 @@ int _strlen(char *s)
 	return (len);
 }
 
+
 /**
  * *str_concat - a function that concatnate 2 string
  * @s1:  string 1
  * @s2 : string 2
  * Return: pointer
  */
+
+
 char *str_concat(char *s1, char *s2)
 {
 
