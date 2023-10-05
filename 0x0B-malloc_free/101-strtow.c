@@ -8,7 +8,7 @@
 
 int wrdcnt(char *s)
 {
-	int i, c = 0;
+	int i, n = 0;
 
 	for (i = 0; s[i]; i++)
 	{
@@ -39,7 +39,7 @@ char **strtow(char *str)
 		return (NULL);
 	n = wrdcnt(str);
 	if (n == 1)
-		return (NULL)
+		return (NULL);
 	w = (char **)malloc(n * sizeof(char *));
 	if (w == NULL)
 		return (NULL);
