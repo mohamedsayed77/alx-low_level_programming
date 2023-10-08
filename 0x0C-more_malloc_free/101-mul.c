@@ -15,6 +15,7 @@ void _puts(char *str)
 		_putchar(str[i]);
 		i++;
 	}
+	_putchar('\n');
 }
 
 /**
@@ -26,7 +27,7 @@ void _puts(char *str)
 int _atoi(const char *s)
 {
 	int sign = 1;
-	unsigned long int resp = 0, firstNum, i;
+	int resp = 0, firstNum, i;
 
 	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
 	{
@@ -48,10 +49,16 @@ int _atoi(const char *s)
  * Return: 0
 */
 
-void print_int(unsigned long int n)
+void print_int(int n)
 {
 
-	unsigned long int divisor = 1, i, resp;
+	int divisor = 1, i, resp;
+
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+	}
 
 	for (i = 0; n / divisor > 9; i++, divisor *= 10)
 		;
@@ -61,6 +68,7 @@ void print_int(unsigned long int n)
 		resp = n / divisor;
 		_putchar('0' + resp);
 	}
+	_putchar('\n');
 }
 
 
@@ -84,6 +92,5 @@ int main(int argc, char const *argv[])
 		exit(98);
 	}
 	print_int(_atoi(argv[1]) * _atoi(argv[2]));
-	_putchar('\n');
 	return (0);
 }
