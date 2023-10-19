@@ -4,7 +4,7 @@
  * add_node - a function that adds a node to the head of the list
  * @head: the address of the pointer to head
  * @str: str field of the node
- * return: the size of the list
+ * Return: the size of the list
  */
 
 
