@@ -5,8 +5,6 @@
  * @head: the address of the pointer to head
  * @str: str field of the node
  * return: the size of the list
- *
- * Description: singly linked list node structure
  */
 
 
