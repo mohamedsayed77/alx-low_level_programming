@@ -1,9 +1,8 @@
 #include "lists.h"
 
-
 /**
  * print_listint - a function that prints all elements of the listint
- *		that are the integers
+ * that are the integers
  * @h: pointer to the first node in the list
  * Return: return the number of nodes
  */
