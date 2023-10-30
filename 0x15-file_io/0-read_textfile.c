@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * read_textfile - a function that reads text from a file and print it
  * @filename: it take the name of the file to read
@@ -20,7 +21,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 
-	bytes = read(fd, &buff[o], letters);
+	bytes = read(fd, &buff[0], letters);
 	bytes = write(STDOUT_FILENO, &buff[0], bytes);
 	close(fd);
 
