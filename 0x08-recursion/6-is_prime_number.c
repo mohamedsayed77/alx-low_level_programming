@@ -1,36 +1,33 @@
 include "main.h"
 
+
 /**
- * check_prime - helper function to check if number is prime
- * @n: the candidate number to check if it is prime
- * @factor: the current factor to check against n
- * Return: 1 if n is prime, 0 otherwise
+ * check_prime - check all number < n if they can divide it
+ * @n : int
+ * @othrn : int
+ * Return: int
  */
 
-
-int check_prime(int n, int factor)
+int check_prime(int n, int othrn)
 {
-	if (factor * factor > n)
+
+	if (othrn >= n && n > 1)
 		return (1);
 
-	if (n % factor == 0)
+	else if (n % othrn == 0 || n <= 1)
 		return (0);
 
-	return (check_prime(n, factor + 1));
+	else
+		return (check_prime(n, othrn + 1));
 }
 
 /**
- * is_prime_number - returns 1 if n is a prime number, 0 if not
- * @n: the number to check
- * Return: 1 if n is prime, 0 otherwise
+ * is_prime_number - check if n is a prime number.
+ * @n: takes int
+ * Return: return 0 or 1
  */
-
 
 int is_prime_number(int n)
 {
-	if (n <= 1)
-		return (0);
-
 	return (check_prime(n, 2));
 }
-
