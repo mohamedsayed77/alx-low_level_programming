@@ -1,4 +1,17 @@
-include "main.h"
+#include "main.h"
+
+/**
+ * is_prime_number - check if n is a prime number.
+ * @othrn : int
+ * @n : int
+ * Return: return 0 or 1
+*/
+
+int check_prime(int n, int othrn);
+int is_prime_number(int n)
+{
+	return (check_prime(n, 2));
+}
 
 
 /**
@@ -6,9 +19,7 @@ include "main.h"
  * @n : int
  * @othrn : int
  * Return: int
- */
-
-int check_prime(int n, int othrn);
+*/
 
 int check_prime(int n, int othrn)
 {
@@ -21,15 +32,4 @@ int check_prime(int n, int othrn)
 
 	else
 		return (check_prime(n, othrn + 1));
-}
-
-/**
- * is_prime_number - check if n is a prime number.
- * @n: takes int
- * Return: return 0 or 1
- */
-
-int is_prime_number(int n)
-{
-	return (check_prime(n, 2));
 }
