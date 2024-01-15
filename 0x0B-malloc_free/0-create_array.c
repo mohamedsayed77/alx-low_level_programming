@@ -1,4 +1,4 @@
-#include "main.h
+#include "main.h"
 
 /**
 * create_array - a function that create array of char
@@ -11,12 +11,13 @@
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i = 0;
+	char *arr;
 
 
 	if (size == 0)
 		return (NULL);
 
-	char *arr = malloc(sizeof(char) * size);
+	arr = malloc(sizeof(char) * size);
 
 	if (arr == NULL)
 		return (NULL);
