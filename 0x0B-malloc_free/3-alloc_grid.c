@@ -30,16 +30,16 @@ int **alloc_grid(int width, int height)
 			ppi[i] = malloc(sizeof(**ppi) * col);
 
 			if (ppi[i] == 0)
+			{
 				while (i--)
-				{
 					free(ppi[i]);
-					free(ppi);
-					return (NULL);
-				}
+				free(ppi);
+				return (NULL);
+			}
 
-			else
-				for (j = 0; j < col; j++)
-					ppi[i][j] = 0;
+
+			for (j = 0; j < col; j++)
+				ppi[i][j] = 0;
 
 		}
 	}
