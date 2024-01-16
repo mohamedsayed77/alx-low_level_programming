@@ -16,35 +16,32 @@ int **alloc_grid(int width, int height)
 
 	row = height;
 	col = width;
-
-
-	if (row <= 0 || col  <= 0)
-		return (NULL);
-
-
 	ppi = malloc(sizeof(*ppi) * row);
 
-	if (ppi == 0)
+
+	if (row <= 0 || col  <= 0 || ppi == 0)
 		return (NULL);
 
-	for (i = 0; i < row; i++)
+	else
 	{
-		ppi[i] = malloc(sizeof(**ppi) * col);
 
-		if (ppi[i] == 0)
-			while (i--)
-			{
-				free(ppi[i]);
-				free(ppi);
-				return (NULL);
-			}
+		for (i = 0; i < row; i++)
+		{
+			ppi[i] = malloc(sizeof(**ppi) * col);
 
+			if (ppi[i] == 0)
+				while (i--)
+				{
+					free(ppi[i]);
+					free(ppi);
+					return (NULL);
+				}
 
-		else
-			for (j = 0; j < col; j++)
-				ppi[i][j] = 0;
+			else
+				for (j = 0; j < col; j++)
+					ppi[i][j] = 0;
 
+		}
 	}
-
 	return (ppi);
 }
