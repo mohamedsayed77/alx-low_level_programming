@@ -24,14 +24,14 @@ int **alloc_grid(int width, int height)
 
 	ppi = malloc(sizeof(*ppi) * row);
 
-	if (ppi == NULL)
+	if (ppi == 0)
 		return (NULL);
 
 	for (i = 0; i < row; i++)
 	{
 		ppi[i] = malloc(sizeof(int) * col);
 
-		if (ppi[i] == NULL)
+		if (ppi[i] == 0)
 			while (i--)
 			{
 				free(ppi[i]);
