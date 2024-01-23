@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "dog.h"
+#include <stdlib.h>
+
 
 /**
 * free_dog - a fucntion that free dogs
