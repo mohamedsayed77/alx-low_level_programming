@@ -1,4 +1,4 @@
-include "lists.h"
+#include "lists.h"
 
 /**
 * print_list - a functions that prints a linked lists
@@ -15,7 +15,7 @@ size_t print_list(const list_t *h)
 	while (h)
 	{
 
-		printf("[%d] %s\n", strlen(h->str),
+		printf("[%ld] %s\n", strlen(h->str),
 		h->str ? h->str : "(nil)");
 		h = h->next;
 		i++;
