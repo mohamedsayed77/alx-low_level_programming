@@ -80,9 +80,11 @@ void exit_with_error(int fd, const char *message)
 
 void print_elf_header(Elf64_Ehdr *ehdr)
 {
+	int i;
+
 	printf("ELF Header:\n");
 	printf("  Magic:   ");
-	for (int i = 0; i < EI_NIDENT; i++)
+	for (i = 0; i < EI_NIDENT; i++)
 		printf("%02x ", ehdr->e_ident[i]);
 	printf("\n");
 
