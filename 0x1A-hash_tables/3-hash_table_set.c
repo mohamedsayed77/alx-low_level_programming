@@ -49,9 +49,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	char *new_value;
 
 	if (ht == NULL || ht->array == NULL || ht->size == 0 ||
-		value == NULL || key == NULL || strlen(key) == 0)
-			return (0);
-	
+	value == NULL || key == NULL || strlen(key) == 0)
+		return (0);
+
 	index = key_index((const unsigned char *)key, ht->size);
 	tmp = ht->array[index];
 
