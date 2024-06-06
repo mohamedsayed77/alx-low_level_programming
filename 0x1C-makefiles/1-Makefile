@@ -1,9 +1,5 @@
-# -*- MakeFile -*-
+CC=gcc
+SRC=main.c holberton.c 
 
-CC = gcc  # compiler to be used
-SRC = main.c holberton.c  # source .c files
-
-all: holberton
-
-holberton: $(SRC) m.h
+all: main.c holberton.c
 	$(CC) $(SRC) -o holberton
