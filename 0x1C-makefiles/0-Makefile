@@ -1,2 +1,9 @@
-all: main.c holberton.c
-	gcc main.c holberton.c -o holberton
+all: school
+
+school:
+    gcc main.c school.c -o school
+
+clean:
+    rm -f school
+
+re: clean all
